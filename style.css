@@ -1,177 +1,112 @@
 *{
-    margin: 0;
-    padding: 0;
+    margin: 5px;
+    padding: 5px;
     box-sizing: border-box;
-
+    background-color: rgb(224, 216, 216);
+    font-family: 'poppins', sans-serif;
 }
-
-/* Navbar */
+/* navbar */
 .navbar{
+    background-color: white;
+    border: 5px ;
+    height: 75px;
     display: flex;
-    justify-content:space-between;
+    justify-content: space-between;
     align-items: center;
-    background-color: rgb(224, 211, 173);
-    position: sticky;
-    top: 0;
-    padding-left: 15px;
-    min-height: 15vh;
+ 
 }
+
 .logo{
-    background-color: rgb(173, 166, 142); 
+    color: rgb(177, 97, 97);
+    font-size: 150%;
+    background-color: rgb(153, 128, 128);
     border-radius: 20px 80px;
-    color: rgb(143, 93, 18);
-    font-size:200%;
+    text-shadow: 0 1px black;
 }
-.topright{
-    display: flex;
+
+.menu{
     list-style: none;
+    display: flex;
     justify-content: space-between;
-    padding: 5px 40px;
-    font-weight: bold;
-    margin: 2%;
-    transition: all .5s ease;
-    background-color: rgb(179, 173, 122);
+}
+
+.menu li a {
+   box-sizing: border-box;
+   color: rgb(180, 32, 32);
+   text-decoration: none;
+   background-color: rgb(153, 128, 128) ;
+}
+
+.menu li a:hover{
+    box-shadow: 0 0 5px;
+    color: rgb(216, 175, 175);
+    background-color: rgb(102, 85, 85);
+}
+ 
+
+/* video section */
+
+.video-box{
+    background-color:none;
+    height: 80vh;
+    align-content: center;
+    padding: 0px 150px 0px;
     
 }
 
-.topright li a{
-    padding: 8px 25px;
-}
-.photo-box{
-    min-height: 85vh;
-    width: 100%;
-    background-color: gray;
-    background: url('Slimane.jpeg')no-repeat center center/cover;
+video{
+    width: 70vw;
+
 }
 
-/* style inside bio */
-.bio{
-    min-height: 45vh;
-    width: 100%;
-    background-color: rgb(168, 149, 149);
+
+/* Bio Section */
+
+.bio {
     display: flex;
-    justify-content: space-between;
-    padding: 20px;
+    color: white;
+    font-size: 35px;
 }
 
-.my-name{
-    height: 60px;
-    width: 230px;
-    background-color: rgb(207, 168, 168);
-    font-size: 40px;
-    font-family:inherit;
-    color: rgb(39, 37, 41);
-    padding-top: 2px;
+.bio h1 {
+    color:  rgb(102, 85, 85);
+    text-align: center;
 }
 
-.my-bio{
-    height: 160px;
-    width: 1000px;
-    background-color: rgb(170, 139, 139);
-    font-size: 25px;
-    padding-top: 20px;
-   
+.line {
+    border-bottom: 5px solid rgb(180, 32, 32);
+    width: 500px;
+    margin-left: 150px;
 }
-/* About Me page */
-.aboutme-page{
+
+img {
+    height: 60vh;
+    border-radius: 50%;
+}
+
+/* footer */
+
+.lining {
+    border-bottom: 1px solid white;
+    width: 500px;
+    margin-left: 400px;
+}
+
+footer {
+    /* background-color: rgb(99, 117, 117); */
     display: flex;
-    background-color: rgb(178, 187, 187);
-    padding: 1px 5%;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-    justify-content: center;
+    align-items: center;
     color: brown;
 }
 
-.my-image{
-    height: 250px;
-    width: 250px;
-    background: url('Slimane.jpeg')no-repeat center center/cover;
-    border-radius: 300px 300px;
+.addrs-socials li {
+    list-style: none;
+    text-align: left;
     
 }
 
-
-/* style inside adresses */
-.address{
-    min-height: 30vh;
-    width: 100%;
-    background-color: rgb(141, 132, 132);
-    display: flex;
-   
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-}
-/* Contact Us page */
-.contactus-page{
-    display: flex;
-    background-color: rgb(178, 187, 187);
-    padding: 1px 5%;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-    justify-content: center;
-    color: brown;
-}
-
-.handles{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    background-color: rgb(167, 170, 170);
-    height: 200px;
-    width: 400px;
-
-
-}
-.my-address{
-    height: 100px;
-    width: 100;
-    background-color: rgb(150, 142, 142);
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-
-}
-
-.my-handles{
-    display: flex;
-    justify-content: space-between;
-}
-.twiter{
-    height: 80px;
-    width: 80px;
-    background-color: rgb(86, 87, 136);
-    border-radius: 50%;
+footer ul li {
+    list-style: none;
     text-align: center;
-    padding: 7px;
-}
-.facebook{
-    height: 80px;
-    width: 80px;
-    background-color: rgb(108, 136, 86);
-    border-radius: 50%;
-    text-align: center;
-    padding: 25px 5px;
-}
-.insta{
-    height: 80px;
-    width: 80px;
-    background-color: rgb(180, 131, 131);
-    border-radius: 50%;
-    text-align: center;
-    padding: 25px 5px;
-}
-        
-   
-.my-links{
-    height: 200px;
-    width: 400px;
-    background-color: rgb(131, 122, 122);
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-}
+} 
 
-.map{
-    height: 200px;
-    width: 400px;
-    background-color: rgb(240, 35, 35);
-}
