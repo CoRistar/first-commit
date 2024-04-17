@@ -2,12 +2,11 @@
     margin: 5px;
     padding: 5px;
     box-sizing: border-box;
-    background-color: rgb(224, 216, 216);
     font-family: 'poppins', sans-serif;
 }
 /* navbar */
 .navbar{
-    background-color: white;
+    background-color: rgb(221, 218, 218);
     border: 5px ;
     height: 75px;
     display: flex;
@@ -34,7 +33,7 @@
    box-sizing: border-box;
    color: rgb(180, 32, 32);
    text-decoration: none;
-   background-color: rgb(153, 128, 128) ;
+   /* background-color: rgb(153, 128, 128) ; */
 }
 
 .menu li a:hover{
@@ -64,7 +63,7 @@ video{
 
 .bio {
     display: flex;
-    color: white;
+    color: rgb(129, 120, 120);
     font-size: 35px;
 }
 
@@ -81,23 +80,24 @@ video{
 
 img {
     height: 60vh;
-    border-radius: 50%;
+    border-radius: 150px 150px;
 }
 
 /* footer */
 
 .lining {
     border-bottom: 1px solid white;
-    width: 500px;
-    margin-left: 400px;
+    width: 800px;
+    margin-left: 170px;
 }
 
 footer {
-    /* background-color: rgb(99, 117, 117); */
+    background-color: rgb(221, 218, 218);
     display: flex;
     align-items: center;
     color: rgb(180, 32, 32);
 }
+
 
 .addrs-socials li {
     list-style: none;
@@ -109,4 +109,46 @@ footer ul li {
     list-style: none;
     text-align: center;
 } 
+.copyright {
+    text-align: center;
+    padding-top: 5px;
+    background-color:  rgb(102, 85, 85);
+    /* color: ; */
+}
 
+
+/* Contact Me Page */
+
+.contactus-page {
+    padding: 20px;
+    color:  rgb(102, 85, 85);
+}
+
+.addrs-socials {
+    /* display: flex; */
+    margin-bottom: 20px;
+    align-items: center;
+    justify-content: center;
+    color: rgb(180, 32, 32);
+}
+
+.links a {
+    margin-bottom: 20px;
+    margin-left: 150px;
+
+}
+
+.embedded-map {
+    margin-bottom: 20px;
+}
+
+.embedded-map iframe {
+    width: 100%;
+}
+
+/* About Me Page */
+
+.aboutme-page {
+    text-align: center;
+    color:  rgb(102, 85, 85);
+}
