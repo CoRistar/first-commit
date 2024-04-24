@@ -3,56 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Contact Me</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet"/>
+   
 </head>
 <body>
-    <nav class="navbar"> 
-        <h1 class="logo">ReMoc</h1>
-        <div class="topright">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="aboutme.html">About Me</a></li>
-          <li><a href="contactus.html">Contact Us</a></li>
-        </div>
-  
-      </nav>  
+      
+<nav class="Navbar">
+    <div class="logo">ReMoc</div>
+    <ul class="menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="aboutme.html">About Me</a></li>
+        <li><a href="contactus.html">Contact Me</a></li>
+    </ul>
+</nav>
 
-      <div class="contactus-page">
-        <h1>Contact Us</h1>
-      </div>
 
-      <div class="address">
-        <div  class="handles">
-          <div class="my-address">
-            <h4>130 Klipspruit <p>Pimville</p><p>Soweto</p><p>1809</p> </h4>
-          </div>
-        
-        <div class="my-handles">
-          <div class="twiter"> twitter handle here</div>
-          <div class="facebook"> Facebook </div>
-          <div class="insta"> Instagram</div>
-        </div>
-      </div>
-        <div>
-          <div class="my-links">
-            <h1>Links</h1>
-            <a href="mailto:retshe.moc@gmail.com">retshe.moc@gmail.com</a>
-            <a href="http://www.linkedin.com/in/
-            ristar-chouks-a90168164
-            ">www.linkedin.com/in/
-            ristar-chouks-a90168164
-            <a href="tel:+27713668992">+27713668992</a>
-            </a>
-            <h1></h1>
-            <h1></h1>
-          </div> 
-        </div>
-        
-             
-        <div class="map">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m21!1m12!1m3!1d57251.28318432547!2d27.853755460678805!3d-26.25500284511613!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m6!3e6!4m3!3m2!1d-26.2550857!2d27.894955399999997!4m0!5e0!3m2!1sen!2sza!4v1712505335948!5m2!1sen!2sza" width="400" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-  
-        </div>
-      </div>
+<div class="infoForm">
+
+  <form action="https://getform.io/f/panvkola" method="POST" onsubmit="return validateForm()">
+    <input type="text" name="name" id="name" placeholder="Your Name">
+    <input type="email" name="email" id="email" placeholder="Your Email">
+    <textarea name="message" id="message" rows="4" placeholder="Your Message"></textarea>
+    <button type="submit">Send</button>
+  </form> 
+    
+</div>
+
+<div class="Socials">
+  <i class="ri-twitter-x-line"> MdeUp4nw</i>
+  <i class="ri-whatsapp-line"> 0719328222</i>
+  <i class="ri-github-fill"> CoRistar</i>
+</div>
+
+<div class="embedded-map">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m21!1m12!1m3!1d57251.28318432547!2d27.853755460678805!3d-26.25500284511613!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m6!3e6!4m3!3m2!1d-26.2550857!2d27.894955399999997!4m0!5e0!3m2!1sen!2sza!4v1712505335948!5m2!1sen!2sza" width="400" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
+
+<script>
+function validateForm() {
+    var name = document.getElementById("name").value;
+    var email = document.getElementById("email").value;
+    var message = document.getElementById("message").value;
+
+    if (name.trim() == "" || email.trim() == "" || message.trim() == "") {
+        alert("Please fill out all fields.");
+        return false; // Prevent form submission
+    }
+    return true; // Allow form submission
+}
+</script>
+       
 </body>
 </html>
